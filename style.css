@@ -1,0 +1,289 @@
+@import url("http://www.fontstatic.com/f=jooza");
+@import url("http://www.fontstatic.com/f=jooza");
+@import url("http://www.fontstatic.com/f=cocon-next-arabic");
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+
+}
+
+body{
+    font-family: 'jooza';
+    background:#d9ecea;
+    }
+
+
+h1{font-size: 5rem;
+margin-bottom: 1rem;
+color:white;}
+
+i{font-size: 5rem;
+    margin-bottom: 1rem;
+    color:white;}
+
+h4{font-size: 2rem;
+line-height: 1.8;
+margin-bottom: 2rem;
+color:#d5d5d5;}
+
+p{font-size: 1.6rem;
+color: #9bbfbb;
+line-height: 2;}
+
+/* NAV SECTION*/
+.nav-container{
+    background: #9bbfbb;
+    color: #f0f4f8;
+}
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 1.6rem;
+} 
+nav .logo{
+    font-family: 'cocon-next-arabic';
+    font-weight: bold;
+color: rgb(255, 255, 255);
+flex: 2;
+font: size 0.5rem; ;
+margin-bottom: 0 ;}
+nav .logo span{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style-type:none;
+    justify-content: space-between;
+    flex: 1;
+}
+nav ul li a{
+    display: block;
+    color: #f0f4f8;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #3b415b;}
+ 
+/* Hero Sectton*/
+
+.hero{
+    height: 90vh;
+    position: relative;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image:url('');
+    background-size: cover;
+    background-position: center;
+
+}
+.content{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+}
+
+h1 span{color: #3b415b;}
+i span{
+    font-size: medium;
+    color: hsl(229, 21%, 29%);
+}
+ /*Qualities Section*/
+ .qualities{
+    width: 90%;
+    margin: 4rem auto;
+    max-width: 1366px;
+    height: 1005;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ }
+ .qualities h2{ 
+font-size: 2.9rem;
+
+ }
+ .quality-container{
+    display: flex;
+    justify-content: space-between;
+    grid-gap:2rem;
+    padding-top: 5rem;
+ }
+
+
+ .quality{
+    background: #c7ddda;
+    padding: 4rem 0;
+    width: 30%;
+ }
+.quality p{
+text-align: center;
+width: 70%;
+margin: 1rem auto;
+}
+.quality h3{
+    color: black;
+    font-size: 2.2rem;
+}
+
+.about-us{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 22vh;
+    display: flex;
+    justify-content: space-between;
+
+
+    
+}
+.about-content h2{
+    color: #000000;
+    font-size: 3rem;
+
+}
+.about-content p{
+    color: #9bbfbb;
+    font-size: 1rem;
+    text-align: center;
+
+
+}
+.about-content li{
+    color:#9bbfbb;
+   
+
+}
+/*Contact us Section*/
+.contact{
+    width: 90%;
+    max-width: 1366px;
+    margin: 3rem auto;
+    height: 100%;
+    padding: 2rem;
+}
+.contact h2{
+    font-size: 2rem;
+    text-align: center;
+}
+label{
+    font-family: inherit;
+font-size: 2rem;
+
+}
+input{
+    font-size: 1.8rem;
+
+}
+
+
+button{   
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.50rem 1rem;
+    border-radius: 0.90rem;
+    border: none;
+    outline: none;
+    color: white;
+    background: #3b415b;
+    }
+    .btn:hover
+    {
+        background: #2f344a;
+    }
+    .btn:active
+    {
+transform: scale(0.98);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem 0;
+        width: 100%;
+    text-align: center;
+    }
+    form .btn{
+        width: 100pt;
+        align-self: center;
+    }
+    input{
+        width: 30%;
+        border-radius: 0.9rem;
+        border: none;
+        outline: none;
+        padding: 0.75rem 3rem;
+        margin: 0 auto;
+
+    }
+    label,input,button{
+        margin-bottom: 1.5rem;
+    }
+
+    /*Footer Section*/
+footer{background: #9bbfbb;display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh;
+    }
+    footer p{color:white;}
+
+
+
+    /*Responsive design*/@media screen and (max-width:1400px) { 
+        .hero, 
+        .content {
+            align-items: center; 
+            text-align: center;
+        } 
+    }
+    @media screen and (max-width:1184px) {
+    nav ul{
+        flex-direction: column;
+    }
+nav ul li a{font-size: 1.5rem;}
+}
+@media screen and (max-width:984px) {
+    .quality-container{flex-wrap:wrap ;}
+    .quality{width: 100%;
+    }.hero::after{animation:none;
+    background-position: center;}
+}
+@media screen and (max-width:736px){
+    .about-content{justify-content: center;
+    align-items: center;
+text-align: center;}
+}
+
+form button{
+    width: 100pt;
+    align-self: center;
+}
